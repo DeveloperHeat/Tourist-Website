@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>3D-View</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="dman">
+<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <button onclick="back()" class="dam">Go Back</button>
+<a-scene>
+  <a-assets>
+    <img id="panorama" src="baypan.jpg" crossorigin />
+  </a-assets>
+  <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+</a-scene>
+  <script src="script.js"></script>
+</body>
+
+</html>
